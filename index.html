@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    background-color: black;
+    text-align: center;
+    padding: 100px;
+}
+h1{
+    color:#3e8e41;
+}
+
+h2{
+    color: #3e8e41;
+    background-color: black;
+    display: inline-block;
+    width: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+</style>
+<body>
+    <div>
+   <div>
+        <h1>Stop Wacth</h1>
+   </div>
+   <div>
+    <h2 id="hrs">0</h2>
+    <h2 id="min">0</h2>
+    <h2 id="sec">0</h2>
+    <h2 id="msec">0</h2>
+   </div>
+   <div>
+    <button class="button" onclick="start()">Start</button>
+    <button class="button" onclick="stop()">Stop</button>
+    <button class="button" onclick="reset()">Reset</button>
+   </div>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
